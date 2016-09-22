@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var Articles = {
+var articles = {
     'article-one' :{
     title: 'Article one | Mohit Singh Dhanik',
     heading:'Article one',
@@ -74,8 +74,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/articleName', function (req,res){
-    //articleName=Article-one
-    //articles[articleName]={} content object for article one
+    //articleName=article-one
+    //articles[articleName]== {} content object for article one
     var articleName = req.params.articleName;
    res.send(createTemplate(Articles[articleName]));
 });
