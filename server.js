@@ -29,12 +29,13 @@ var Articles = {
     content:` <p>
                   This is the content of my second article.
             </p> `   },
-    'Article-Three' :{ title: 'Article three | Mohit Singh Dhanik',
+    'Article-Three' :{ 
+    title: 'Article three | Mohit Singh Dhanik',
     heading:'Article three',
     date: 'sep 25,2016',
-    content:` 
-                <p>    `This is the content of my third article.`
-</p>`};
+    content:`  <p>    
+    This is the content of my third article.
+</p>`}};
 function createTemplate (data){
     var title = data.title;
     var date = data.date;
