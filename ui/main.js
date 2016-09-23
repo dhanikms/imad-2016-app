@@ -20,7 +20,7 @@ button.onclick = function() {
      //Not done yet
 };
 
-// make the request
-request.open('GET','http://dhanikms.imad.hasura-app.io/counter',true);
+// Make the request
+request.open('GET', 'http://dhanikms.imad.hasura-app.io/counter',true);
 request.send(null);
 };
