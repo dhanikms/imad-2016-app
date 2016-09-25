@@ -91,7 +91,7 @@ app.get('/submit-name', function (req, res) { // URL: /submit-name?name=xxxxxx
 });
 
 app.get('/:articleName', function (req,res){
-    //articleName=article-one
+    //articleName == article-one
     //articles[articleName]== {} content object for article one
     var articleName = req.params.articleName;
    res.send(createTemplate(articles[articleName]));
