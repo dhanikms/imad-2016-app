@@ -27,7 +27,7 @@ request.send(null);
 // Sumbit name
 var nameInput = document.getElementById('name');
 var name = nameInput.value;
-var sumbit = document.getElementById('submit_btn');
+var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
     // Make a request to the server and sendthe name
   
