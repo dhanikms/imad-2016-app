@@ -25,8 +25,6 @@ request.send(null);
 };
 
 // Sumbit name
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
     
@@ -54,6 +52,8 @@ submit.onclick = function () {
 };
 
 // Make the request
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
 request.open('GET', 'http://dhanikms.imad.hasura-app./submit-name?name=' +name,true);
 request.send(null);
 
